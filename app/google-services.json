@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "956074754670",
+    "firebase_url": "https://calcapphit.firebaseio.com",
+    "project_id": "calcapphit",
+    "storage_bucket": "calcapphit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956074754670:android:bf56b0ece84431fb265c7f",
+        "android_client_info": {
+          "package_name": "com.example.calcapphit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956074754670-jcjgftg6h96rdahqics42cj4fjpji45r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmTWo0Dvs5p_wgmMzZRC_Cq12o9o1rl3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956074754670-jcjgftg6h96rdahqics42cj4fjpji45r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black"
+        android:gravity="bottom"
+        android:text="0"
+        android:textAlignment="textStart"
+        android:textColor="#fff"
+        android:textSize="88sp" />
+
+    <LinearLayout
+        android:id="@+id/Linel1"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="7"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="8"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="9"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="AC"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linel2"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="4"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="5"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="6"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="*"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linel3"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="2"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="3"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="+"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linel4"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="."
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="="
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="#8B393434" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="/"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linel5"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="TAN"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="COS"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="SIN"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:text="-"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="readFromData"
+        android:text="Say hello" />
+
+</LinearLayout>

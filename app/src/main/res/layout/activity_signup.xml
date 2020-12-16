@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context=".SignUp">
+
+        <EditText
+            android:id="@+id/SiEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Email:"
+            android:textAlignment="textStart"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context=".SignUp">
+
+        <EditText
+            android:id="@+id/SiPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Password:"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context=".SignUp">
+
+        <EditText
+            android:id="@+id/SiPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="PhoneNumber:"
+            android:textAlignment="textStart"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context=".SignUp">
+
+        <EditText
+            android:id="@+id/SiAge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Age:"
+            android:textAlignment="textStart"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context=".SignUP">
+
+        <Button
+            android:id="@+id/SignUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="SignUp"
+            android:onClick="Signup"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>
