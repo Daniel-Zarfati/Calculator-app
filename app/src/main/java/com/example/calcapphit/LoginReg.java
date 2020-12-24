@@ -34,8 +34,6 @@ public class LoginReg extends AppCompatActivity {
             finish();
         }
 
-
-        //setContentView(R.layout.activity_main);
         EditText user = findViewById(R.id.Email);
         EditText pass = findViewById(R.id.Password);
 
