@@ -1,8 +1,10 @@
 package com.example.calcapphit;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,15 +18,31 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class LoginReg extends AppCompatActivity {
-    private FirebaseAuth mAuth;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_reg);
         mAuth = FirebaseAuth.getInstance();
+
+        if (mAuth.getCurrentUser() != null) {
+            // User is signed in (getCurrentUser() will be null if not signed in)
+            Intent intent = new Intent(LoginReg.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
+
+        //setContentView(R.layout.activity_main);
+        EditText user = findViewById(R.id.Email);
+        EditText pass = findViewById(R.id.Password);
+
+        SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE); // PRIVATE FILE IN MY PHONE
+        if (sharedPreferences.getString("Email", null)!= null)
+            user.setText(sharedPreferences.getString("Email",null));
+            pass.setText(sharedPreferences.getString("Password",null));
 
     }
 
@@ -44,8 +62,31 @@ public class LoginReg extends AppCompatActivity {
                             Toast.makeText(LoginReg.this, "Login Succeeded.",
                                     Toast.LENGTH_LONG).show();
                             FirebaseUser user = mAuth.getCurrentUser();
+
+                            EditText user2 = findViewById(R.id.Email);
+                            EditText pass = findViewById(R.id.Password);
+
+                            SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE); // PRIVATE FILE IN MY PHONE
+
+                            if (sharedPreferences.getString("Email", null) == null)
+                            {
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+                                editor.putString("Email",user2.getText().toString());
+                                editor.putString("Password",pass.getText().toString()); // saved name and pass in cookie
+
+                                editor.apply();
+                                Intent intent = new Intent(LoginReg.this, MainActivity.class);
+                                startActivity(intent);
+                            }
+                            else{
+                                user2.setText(sharedPreferences.getString("Email",null));
+                                pass.setText(sharedPreferences.getString("Password",null));
+
+                            }
                             Intent intent = new Intent(LoginReg.this, MainActivity.class);
                             startActivity(intent);
+
+
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -56,6 +97,8 @@ public class LoginReg extends AppCompatActivity {
                     }
                 });
     }
+
+
 
 
     public void movePage(View view) {

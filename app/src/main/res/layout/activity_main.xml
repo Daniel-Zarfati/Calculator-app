@@ -444,6 +444,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="readFromData"
-        android:text="Say hello" />
+        android:text="Verify Firebase" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="LogOut"
+        android:text="logout" />
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.calcapphit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -123,6 +124,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
           }
+
         });
     }
     @Override
@@ -137,6 +139,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onRestoreInstanceState(savedInstanceState);
         savedInstanceState.getInt("sol");
     }
-    
+
+    public void LogOut(View view1){
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(this, LoginReg.class);
+        startActivity(intent);
+    }
 }
 
